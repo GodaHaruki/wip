@@ -1,0 +1,7 @@
+makeはpathに日本語(shift_jis)が入ってるとpathが壊れて動かない
+プログラミングするときはローカルにフォルダを移動して、コードを実行する
+
+cmakeかmakeのどちらがshift_jisに対応してないかは不明
+
+CMAKE_CXX_COMPILER, CMAKE_C_COMPILER, -G "MinGW Makefiles"を指定してcmakeを実行しないとエラーになる
+compile.batは指定してcmakeとmakeを実行するからそれを使うと便利
