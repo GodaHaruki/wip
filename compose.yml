@@ -1,0 +1,12 @@
+services:
+  rust:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - type: bind
+        source: .
+        target: /wip
+      - type: volume
+        target: /compile
