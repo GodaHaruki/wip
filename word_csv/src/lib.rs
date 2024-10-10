@@ -1,2 +1,2 @@
-mod distance;
-mod levenshtein_distance;
+pub mod distance;
+pub mod levenshtein;
